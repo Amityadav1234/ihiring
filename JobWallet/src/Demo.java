@@ -8,12 +8,18 @@ public class Demo {
 		System.out.println(s.length());
 		System.out.println("hi this my first program");
 		
-		
+		//1 way
 		StringBuffer sb=new StringBuffer();
 		sb.append(s);
 		sb=sb.reverse();
-		System.out.println(sb);
+		System.out.println(sb); 
 		
+		//2 way
+		String orignal="mouse",rev="";
+		for(int i=orignal.length()-1;i>=0;i--)
+		{
+			rev=rev+orignal.charAt(i);
+		}
+		System.out.println(rev);
 	}
-
 }
