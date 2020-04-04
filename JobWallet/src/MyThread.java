@@ -13,6 +13,7 @@ public class MyThread extends Thread{
 	public static void main(String[] args) {
 		MyThread mt=new MyThread();
 		mt.start();
+		//mt.run();
 		
 		for(int i=1;i<5;i++) {
 			System.out.println("main thread");
